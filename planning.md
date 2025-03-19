@@ -106,7 +106,7 @@ I have to learn more about security and check if everything is fine on the go. B
 # Database
 - PostgreSQL, because it's supported by SQLAlchemy, I have experience with it and its state of art / has proof of time.
 - Full-text search and indexing might be great down the line as well.
-- Not sure how to handle data from ML yet. **Ponder** can we store all data we need (image, text, ..) in postgres? => most likely best practice would be to storeimage data in a s3 bucket and only store the link to the data in the DB.
+- Not sure how to handle data from ML yet. **Ponder** can we store all data we need (image, text, ..) in postgres? => most likely best practice would be to storeimage data in a s3 bucket and only store the link to the data in the DB. **ACTUALLY** i could simply store the image as a string of 0s and 1s as it is in MNIST which is 28x28 pixels.
 ## Datbase Design
 ==TODO create with drawIO==
 ## Dataflow
