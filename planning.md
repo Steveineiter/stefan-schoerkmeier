@@ -78,7 +78,7 @@ I do think the most important part here is that it looks nice, testing and secur
 ## Tabs
 - Home
 - About Me
-- ML
+- Machine Learning / AI
 - This project (what i have learned, what my process was (learning in advance/best practices etc), storytelling here)
 - More
   - Certificats / archivements
