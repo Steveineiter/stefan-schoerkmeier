@@ -22,6 +22,8 @@
 ## Architecture
 ## Tech Stack
 ## API Endpoints
+### MVP APIs
+### Full project APIs
 ## Security
 ## Testing
 ## Risk & Assumptions
@@ -74,7 +76,8 @@ I do think the most important part here is that it looks nice, testing and secur
 - Mby create a generative background, like in [chat](https://you.com/search?q=how+to+generate+background+as+in+https%3A%2F%2Fraphaelameaume.com%2Fde+and+https%3A%2F%2Fantfu.me%2F%0A%0Aso+eg+a+growing+tree%3F&fromSearchBar=true&tbm=youchat&chatMode=custom&cid=c0_009e6455-60e2-4e80-ae45-4066d81613c7) but obviously much more sufficicated.
 - [dotbite](https://dotbite.at/de/webentwicklung?gad_source=1&gclid=Cj0KCQjw7dm-BhCoARIsALFk4v8FYDrB6D8BZ9lssPjSIksTTQ_vi5A3ktEbGsFJ_yLYo6QBjeGpmgMaAmViEALw_wcB) has a nice design as well.
 - ==TODO add pictures of design==
-  
+### MVP Design
+### Full Design
 ## Tabs
 - Home
 - About Me
