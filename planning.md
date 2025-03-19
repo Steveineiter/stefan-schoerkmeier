@@ -88,6 +88,7 @@ I do think the most important part here is that it looks nice, testing and secur
     - (mby) projects from udemy/lvs (game dev, ros/camera drones, ...),
     - (mby) also thing from leetcode etc, or build my own linked list / tree which is easy but maybe still cool for people to see.
     - Other proejcts which i will build in future like a smart mirror or so
+    - Or small usefull projects like my autoclose projects thing xD or my first program (tic-tac-toe for meme xD)
   - Blog
   - Health stuff (area im as passionate about as computer science, things seem complex but actually quite straight forward eg food)
   - Great Sources (youtubers i like, stuff about health, cool books (eg Lean Startup, ..), ...)
