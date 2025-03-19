@@ -1,4 +1,18 @@
+# Administration
+## Timetable 
+
 # Backend
+## Overview
+## Requirements
+## Architecture
+## Tech Stack
+## API Endpoints
+## Security
+## Testing
+## Risk & Assumptions
+## Conclusion
+
+---
 
 # Machine Learning
 ## Ideas
@@ -15,7 +29,14 @@
   - Or an algo which doesn't predict optimal but the steps of a human (given a fixed env) 
 -  visualization of other algos.
 
+---
+
 # Database
+- PostgreSQL, because it's supported by SQLAlchemy, I have experience with it and its state of art / has proof of time.
+- Full-text search and indexing might be great down the line as well.
+- Not sure how to handle data from ML yet. **Ponder** can we store all data we need (image, text, ..) in postgres?
+## Datbase Design
+## Dataflow
 
 # Frontend
 ## Design
@@ -28,12 +49,13 @@
 
 ## Tabs
 - Home
-- About
+- About Me
 - Certificats / archivements
 - ML
 - (mby) projects from udemy/lvs (game dev, ros/camera drones, ...),
   - (mby) also thing from leetcode etc, or build my own linked list / tree which is easy but maybe still cool for people to see.
   - Other proejcts which i will build in future like a smart mirror or so
+- Great Sources (youtubers i like, stuff about health, cool books (eg Lean Startup, ..), ...)
 
 # CI/CD
 
