@@ -4,30 +4,83 @@
 - KANBAN on GitHub with projects.
 - AI tool for commit message generation and PR. I think that's important because its like getting feedback from another dev.
 
-  
 ## General Procedure
 - Create as simple as possible and deploy immediately. Aka work on all steps in parallel.
 - MVP
   - is a homepage with a canvas, which can recognize a letter and store this letter with image and true label (if the user provides it)
-  - This is great, because with that the projects is using all parts (backend/db, ml, frontend, ci/cd)
+  - This is great, because with that the project is using all parts (backend/db, ml, frontend, ci/cd)
+
 ## Timetable 
 - ==TODO create with gantt==
 
 ---
   
 # Backend
-==TODO DESIGN ME==
 ## Overview
+This project aims to show my skills as well as learning alot about full stack developement and best practices. The goal would be to have a web page I'm proud about and which is deployed via AWS.
+### Scope
+- Creation of a coherent fullstack application with personal touch. An important part is a ML model with correct MLOps and a nice CI/CD pipeline.
+- Creation of API calls which tie together the frontend, DB and ML pipeline.
+- Integration of LLMs and standard deep learning models as well as generative models.
+- Maybe a content management system for blog entries etc and a login function for users (eg enable more generations or LLM queries)
+### Non-Goals
+- Doesn't need to be perfect, this will be a WIP for my whole career as I will always add features.
+- Doesn't need to be a solution to a problem, it's a learning and prestige project.
+  
 ## Requirements
+### Functional Requirements
+- API calls, such that the ML models, DB and UI work as expected.
+- Efficient data and ML pipelines, to drive down cost on AWS.
+### Non-Functional Requirements
+- Maintainability
+- Usability
+- Efficiency (to drive down cost on AWS).
+- Readability
+- Documentation
 ## Architecture
+==TODO generate sketch==
 ## Tech Stack
+- FastAPI
+- SQLAlchemy
+- Pytest
+- GitHub
+- Venv
+  
 ## API Endpoints
+==TODO after generation of sketch==
 ### MVP APIs
 ### Full project APIs
+
 ## Security
+- SQL-Injection
+- XSS
+- CSRF
+- Insecure Deserialization
+### Solution
+- SQL-Injection: Use ORM in SQLAlchemy, 
+- XSS: Use nh3 or bleach for sanitization
+- CSRF: Use libraries like fastapi-csrf-protect
+- Use pydantic which automatically validates and sanitizes incoming data.
+- Use HTTPS, rate limiting, security headers
+- Keep dependencies updated and use as little libraries as possible.
+  
 ## Testing
+- Unit testing
+- Integration Testing
+- E2E on my own / no automation.
+  
 ## Risk & Assumptions
+### Risks
+- Financial risk (eg wrong AWS settings, ML models exploit)
+- Time sink (spending too much time on this project)
+### Assumptions
+- There is minimal benefit for attacking the system.
+- There will be next to no visitors (maybe host it via raspberry pi)
+
 ## Conclusion
+This document gives an short overview of the architecture, tech stack and API calls for the backend of this project. **FastAPI** will be used since I already have experiences with it and it's the right tool for this job - since there shoulnt be much else than API calls. 
+
+I have to learn more about security and check if everything is fine on the go. But this should not be as bad since I assume there is little to gain from hacking this page.
 
 ---
 
@@ -40,21 +93,24 @@
 -  show all parts of ML aka 1. predition with nn and letter recognizing, then generation (doodle to art), then innovation eg draw a arrow left/right to come to other pages or 1, 2, 3 to come to home about etc.
 -  a llm chatbot which answers questions about me and mainly to get feedback from the user.
 - Or for generation create a **cute dog/cat** generater and learn what people like more and show this to them (given gender, age, ..)
-  
 ### Optional
 -  something like finding fastest path in random world (and compare that with A*), or user draws obstacles and RL-agent must find way out.
   - Or an algo which doesn't predict optimal but the steps of a human (given a fixed env) 
 -  visualization of other algos.
 
+## MLOps
+- ==TODO do research about best way for data/models etc==
+  
 ---
 
 # Database
 - PostgreSQL, because it's supported by SQLAlchemy, I have experience with it and its state of art / has proof of time.
 - Full-text search and indexing might be great down the line as well.
-- Not sure how to handle data from ML yet. **Ponder** can we store all data we need (image, text, ..) in postgres?
+- Not sure how to handle data from ML yet. **Ponder** can we store all data we need (image, text, ..) in postgres? => most likely best practice would be to storeimage data in a s3 bucket and only store the link to the data in the DB.
 ## Datbase Design
+==TODO create with drawIO==
 ## Dataflow
-
+==TODO create with drawIO==
 ---
 
 # Frontend
@@ -65,9 +121,16 @@ I do think the most important part here is that it looks nice, testing and secur
 - TypeScript
 
 ## Security
+As in the backend **XSS** and **CSRF** need to be dealt with. Aditionally **SSR** (server side rendering)
+can be an issue.
+
+Therefore, I need to make sure that we sanitize the user Input and that we don't leak important data while doing server side rendering.
+Additionally, make sure that packages are up to date.
 
 ## Testing
-
+- Only E2E testing as human.
+- Maybe in a future iteration I will add automatic tests.
+  
 ## Design
 - Elias uses Fimga, Emre mentioned moqups.com and DrawIO are nice. What i have seen Penpot could be great as well.
 - Check out [chat](https://www.notion.so/Active-Stuffses-473f9c31d1164d3c830e15c98ba69888?pvs=97#294ef8386774466ea2525b5383f4a5e2) and check other blogs/posts.
@@ -78,6 +141,7 @@ I do think the most important part here is that it looks nice, testing and secur
 - ==TODO add pictures of design==
 ### MVP Design
 ### Full Design
+
 ## Tabs
 - Home
 - About Me
