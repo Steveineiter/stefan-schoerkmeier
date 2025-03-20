@@ -46,10 +46,19 @@ This project aims to show my skills as well as learning alot about full stack de
 - GitHub
 - Venv
   
-## API Endpoints
-==TODO after generation of sketch==
+## API Endpoints   
+Static routes should be frontend only.
+
 ### MVP APIs
+1. /ml/recognition (Input: drawing/pixel values, Output: prediction 0-9)
+
 ### Full project APIs
+1. /ml/recognition (Input: drawing/pixel values, Output: prediction 0-9)
+2. /ml/recognition/feedback (Input: drawing/pixel values and label, Output: None, stores drawing and label in DB)
+3. /ml/llm (Input: prompt, Output: answer and flag whether feedback)
+4. /ml/llm/feedback (Input: feedback from user, Output: None, stores feedback in DB)
+5. /ml/innovation (Input: drawing/pixel values, Output: prediction 0-9)
+6. /ml/innovation/feedback (Input: drawing/pixel values and label, Output: None, stores drawing and label in DB) 
 
 ## Security
 - SQL-Injection
