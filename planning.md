@@ -140,7 +140,7 @@ Additionally, make sure that packages are up to date.
 - Mby create a generative background, like in [chat](https://you.com/search?q=how+to+generate+background+as+in+https%3A%2F%2Fraphaelameaume.com%2Fde+and+https%3A%2F%2Fantfu.me%2F%0A%0Aso+eg+a+growing+tree%3F&fromSearchBar=true&tbm=youchat&chatMode=custom&cid=c0_009e6455-60e2-4e80-ae45-4066d81613c7) but obviously much more sufficicated.
 - [dotbite](https://dotbite.at/de/webentwicklung?gad_source=1&gclid=Cj0KCQjw7dm-BhCoARIsALFk4v8FYDrB6D8BZ9lssPjSIksTTQ_vi5A3ktEbGsFJ_yLYo6QBjeGpmgMaAmViEALw_wcB) has a nice design as well.
 - [Paletton](https://paletton.com/) for color design.
-- ==TODO add pictures of design==
+  
 ### MVP Design
 ![MVP home page](images/MVP%20Home.PNG)
 ![MVP ML page](images/MVP%20ML.PNG)
@@ -148,6 +148,7 @@ Additionally, make sure that packages are up to date.
 ---
 
 ### Full Design
+I have got nice feedback from [LLM](https://you.com/search?q=Which+design+of+my+personal+webpage+do+you+htink+makes+sense%3F+Should+i+make+it+more+professional%2Fstrict+or+more+personal%2Fcool%3F+Eg+dark+theme+etc%3F&fromSearchBar=true&tbm=youchat&chatMode=custom&cid=c0_c4a7a39f-0a89-4b7a-a77c-be903b92105a) and good points which I should fix. Most of those were because i created a quick verison and not the final one.
 ![home](images/home.PNG)
 ![ml1](images/ml1.PNG)
 ![ml2](images/ml2.PNG)
@@ -156,6 +157,8 @@ Additionally, make sure that packages are up to date.
 ![blog](images/blog.PNG)
 ![health](images/health.PNG)
 ![interseting](images/interesting.PNG)
+
+
 
 ## Tabs
 - Home
