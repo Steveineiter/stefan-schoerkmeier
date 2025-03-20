@@ -134,7 +134,7 @@ Additionally, make sure that packages are up to date.
   
 ## Design
 - Elias uses Fimga, Emre mentioned moqups.com and DrawIO are nice. What i have seen Penpot could be great as well.
-- Check out [chat](https://www.notion.so/Active-Stuffses-473f9c31d1164d3c830e15c98ba69888?pvs=97#294ef8386774466ea2525b5383f4a5e2) and check other blogs/posts.
+- Check out [chat]([https://www.notion.so/Active-Stuffses-473f9c31d1164d3c830e15c98ba69888?pvs=97#294ef8386774466ea2525b5383f4a5e2](https://you.com/search?q=Which+design+of+my+personal+webpage+do+you+htink+makes+sense%3F+Should+i+make+it+more+professional%2Fstrict+or+more+personal%2Fcool%3F+Eg+dark+theme+etc%3F&fromSearchBar=true&tbm=youchat&chatMode=custom&cid=c0_c4a7a39f-0a89-4b7a-a77c-be903b92105a)) and check other blogs/posts.
 - Check out [svelt pages]( https://github.com/w3cj/svelte-5-tasks-app/tree/main) and other svelte based public projects for inspiration
 - Check out [web of devs](https://webofdevs.com/ ) i like the design of https://raphaelameaume.com/ and https://antfu.me/ 
 - Mby create a generative background, like in [chat](https://you.com/search?q=how+to+generate+background+as+in+https%3A%2F%2Fraphaelameaume.com%2Fde+and+https%3A%2F%2Fantfu.me%2F%0A%0Aso+eg+a+growing+tree%3F&fromSearchBar=true&tbm=youchat&chatMode=custom&cid=c0_009e6455-60e2-4e80-ae45-4066d81613c7) but obviously much more sufficicated.
