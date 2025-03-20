@@ -149,6 +149,7 @@ Additionally, make sure that packages are up to date.
 
 ### Full Design
 I have got nice feedback from [LLM](https://you.com/search?q=Which+design+of+my+personal+webpage+do+you+htink+makes+sense%3F+Should+i+make+it+more+professional%2Fstrict+or+more+personal%2Fcool%3F+Eg+dark+theme+etc%3F&fromSearchBar=true&tbm=youchat&chatMode=custom&cid=c0_c4a7a39f-0a89-4b7a-a77c-be903b92105a) and good points which I should fix. Most of those were because i created a quick verison and not the final one.
+
 ![home](images/home.PNG)
 ![ml1](images/ml1.PNG)
 ![ml2](images/ml2.PNG)
