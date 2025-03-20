@@ -142,6 +142,10 @@ Additionally, make sure that packages are up to date.
 - [Paletton](https://paletton.com/) for color design.
 - ==TODO add pictures of design==
 ### MVP Design
+
+![MVP home page](images/MVP%20Home.PNG)
+![MVP ML page](images/MVP%20ML.PNG)
+
 ### Full Design
 
 ## Tabs
