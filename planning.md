@@ -38,7 +38,7 @@ This project aims to show my skills as well as learning alot about full stack de
 - Readability
 - Documentation
 ## Architecture
-==TODO generate sketch==
+![architecture](images/architecture.PNG)
 ## Tech Stack
 - FastAPI
 - SQLAlchemy
@@ -110,7 +110,8 @@ I have to learn more about security and check if everything is fine on the go. B
 ## Datbase Design
 ==TODO create with drawIO==
 ## Dataflow
-==TODO create with drawIO==
+![flowchart 1](images/flow_chart_1.PNG)
+![flowchart 2](images/flow_chart_2.PNG)
 
 ---
 
