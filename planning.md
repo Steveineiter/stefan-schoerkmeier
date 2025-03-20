@@ -109,7 +109,8 @@ I have to learn more about security and check if everything is fine on the go. B
 -  visualization of other algos.
 
 ## MLOps
-- ==TODO do research about best way for data/models etc==
+- Research about how to store data etc:
+    - For simple images like from MNIST it should be fine to store them as a string for each pixel. Else we should store the image data eg in s3 buckets and then just store the link in the database.
   
 ---
 
@@ -118,7 +119,7 @@ I have to learn more about security and check if everything is fine on the go. B
 - Full-text search and indexing might be great down the line as well.
 - Not sure how to handle data from ML yet. **Ponder** can we store all data we need (image, text, ..) in postgres? => most likely best practice would be to storeimage data in a s3 bucket and only store the link to the data in the DB. **ACTUALLY** i could simply store the image as a string of 0s and 1s as it is in MNIST which is 28x28 pixels.
 ## Datbase Design
-==TODO create with drawIO==
+![database desing](images/database_design.PNG)
 ## Dataflow
 ![flowchart 1](images/flow_chart_1.PNG)
 ![flowchart 2](images/flow_chart_2.PNG)
