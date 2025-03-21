@@ -11,7 +11,7 @@
   - This is great, because with that the project is using all parts (backend/db, ml, frontend, ci/cd)
 
 ## Timetable 
-- ==TODO create with gantt==
+![gannt chart](images/gannt_chart.PNG)
 
 ---
   
