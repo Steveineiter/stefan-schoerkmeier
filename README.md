@@ -40,9 +40,9 @@ python –m venv <name_of_virtualenv>
 ```
 
 ## Plan
-1. train model / make weights accessible
-2. create backend / ml model call and ml api
-3. create prediction via swagger-ui
+1. ~~train model / make weights accessible~~
+2. ~~create backend / ml model call and ml api~~
+3. ~~create prediction via swagger-ui~~
 4. implement frontend
 5. everything should work on my machine xD
 6. Create ci/cd pipeline, let in run locally on docker
