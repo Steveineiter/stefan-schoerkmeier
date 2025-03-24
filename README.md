@@ -2,6 +2,24 @@
 My personal web page which showcases my skills as a fullstack developer. 
 
 TODO add steps to run it locally. 
+## Run it locally
+### Backend
+1. cd into backend/app 
+```bash
+cd backend/app
+```
+2. create python virutal environment 
+```bash
+python –m venv <name_of_virtualenv>
+```
+3. activate envrionment 
+```bash
+<name_of_virtualenv>\Scripts\activate
+```
+4. run app on uvicorn server 
+```bash
+uvicorn app.main:app --reload --port=8000
+```
 
 ## Plan
 1. train model / make weights accessible
