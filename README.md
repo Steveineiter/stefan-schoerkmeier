@@ -2,11 +2,11 @@
 My personal web page which showcases my skills as a fullstack developer. 
 
 TODO add steps to run it locally. 
-## Run it locally
-### Backend
+## Run it locally (Ubuntu)
+### Backend 
 1. cd into backend/app 
 ```bash
-cd backend/app
+cd backend
 ```
 2. create python virutal environment 
 ```bash
@@ -14,11 +14,29 @@ python –m venv <name_of_virtualenv>
 ```
 3. activate envrionment 
 ```bash
-<name_of_virtualenv>\Scripts\activate
+. <name_of_virtualenv>/bin/activate
 ```
 4. run app on uvicorn server 
 ```bash
-uvicorn app.main:app --reload --port=8000
+ uvicorn app.main:app --reload --port=8000
+```
+
+### Machine learning (Ubuntu)
+1. cd into machine_learning
+```bash
+cd machine_learning
+```
+2. create python virutal environment 
+```bash
+python –m venv <name_of_virtualenv>
+```
+3. activate envrionment 
+```bash
+. <name_of_virtualenv>/bin/activate
+```
+4. run app on uvicorn server 
+```bash
+ uvicorn app.main:app --reload --port=4242
 ```
 
 ## Plan
