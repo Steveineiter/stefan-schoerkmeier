@@ -13,8 +13,19 @@
       paddingTop={i === 0 ? "10rem" : "5rem"}
       includePortrait={section.includePortrait}
     >
-
-      <p>{section.content}</p>
+      {#if section.id === "ml"}
+        <!--TODO import this page / create it as a own file. Because ML page has more sufficticated features in it. Also add the canvas and logic to send pixels to backend yikes-->
+        <h1>Foo </h1>
+        <p> bar</p>
+      {:else}
+        <p>{@html section.content}</p>
+      {/if}
     </Section>
   {/each}
 </div>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+</style>
