@@ -154,8 +154,8 @@ Additionally, make sure that packages are up to date.
 - [Paletton](https://paletton.com/) for color design.
   
 ### MVP Design
-![MVP home page](images/MVP Home.PNG)
-![MVP ML page](images/MVP ML.PNG)
+![MVP home page](images/MVP%20Home.PNG)
+![MVP ML page](images/MVP%20ML.PNG)
 
 ---
 
