@@ -6,3 +6,7 @@ am wichtigsten:
 - anderes color scheme (weil is jetzige is recht gleich zu pornhub xD)
 - anders Foto und freistellen
 Sei sketch: ![sebastian_sketch](images/sebastian_sketch.PNG)
+
+
+### Forrest Knight
+- Check out https://www.youtube.com/watch?v=f_ZxgQQ74Lc and https://github.com/ForrestKnight/3d-portfolio in a later iteration to make everything cool. But i guess I should firstly learn the basics better (HTML, CSS, JS, TypeScript, Tailwind)
