@@ -1,0 +1,7 @@
+/* For some reason this isn't used in +layout.svelte */
+:global(body),
+:global(html) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

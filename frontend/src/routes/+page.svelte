@@ -1,6 +1,7 @@
 <script>
   import Section from '$lib/components/Section.svelte';
   import { sections } from '$lib/sections.js'
+  import MachineLearning from './MachineLearning.svelte'
 
 </script>
 
@@ -14,9 +15,7 @@
       includePortrait={section.includePortrait}
     >
       {#if section.id === "ml"}
-        <!--TODO import this page / create it as a own file. Because ML page has more sufficticated features in it. Also add the canvas and logic to send pixels to backend yikes-->
-        <h1>Foo </h1>
-        <p> bar</p>
+        <MachineLearning color="black" size="4"/>
       {:else}
         <p>{@html section.content}</p>
       {/if}
@@ -24,8 +23,4 @@
   {/each}
 </div>
 
-<style>
-  h1 {
-    text-align: center;
-  }
-</style>
+

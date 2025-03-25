@@ -32,6 +32,7 @@
     scroll-behavior: smooth;
     padding: 1rem;
   }
+
   :global(body),
   :global(html) {
     margin: 0;
