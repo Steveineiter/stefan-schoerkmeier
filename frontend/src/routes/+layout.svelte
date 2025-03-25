@@ -32,4 +32,10 @@
     scroll-behavior: smooth;
     padding: 1rem;
   }
+  :global(body),
+  :global(html) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 </style>

@@ -1,10 +1,10 @@
 <script>
-  // Define your sections
-  const sections = [
-    { id: 'section1', label: 'Section 1' },
-    { id: 'section2', label: 'Section 2' },
-    // { id: 'section3', label: 'Section 3' },
-  ];
+  import { sections } from '$lib/sections.js'
+  // const sections = [
+  //   { id: 'about', label: 'About' },
+  //   { id: 'ml', label: 'Machine Learning' },
+  //   // { id: 'section3', label: 'Section 3' },
+  // ];
 
   // Function to scroll to section
   function scrollToSection(id) {
@@ -20,7 +20,7 @@
     {#each sections as section}
       <li>
         <button on:click={() => scrollToSection(section.id)}>
-          {section.label}
+          {section.title}
         </button>
       </li>
     {/each}
@@ -29,10 +29,11 @@
 
 <style>
   nav {
-    background-color: #f5f5f5;
+    background-color: transparent;
     width: 200px;
     height: 100%;
     padding: 1rem;
+    position: fixed
   }
 
   ul {
@@ -56,6 +57,7 @@
   }
 
   button:hover {
-    background-color: #e0e0e0;
+    background-color: transparent;
+    font-style: oblique;
   }
 </style>

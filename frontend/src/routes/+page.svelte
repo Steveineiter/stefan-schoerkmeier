@@ -1,25 +1,20 @@
 <script>
   import Section from '$lib/components/Section.svelte';
+  import { sections } from '$lib/sections.js'
+
 </script>
 
 <div class="sections-container">
-  <Section id="section1" title="Section 1">
-    <p>Content for section 1 goes here...</p>
-  </Section>
+  {#each sections as section, i}
+    <Section
+      id={section.id}
+      title={section.title}
+      position={i % 2 === 0 ? 'left' : 'right'}
+      paddingTop={i === 0 ? "10rem" : "5rem"}
+      includePortrait={section.includePortrait}
+    >
 
-  <Section id="section2" title="Section 2">
-    <p>Content for section 2 goes here...</p>
-  </Section>
-
-<!--  <Section id="section3" title="Section 3">-->
-<!--    <p>Content for section 3 goes here...</p>-->
-<!--  </Section>-->
+      <p>{section.content}</p>
+    </Section>
+  {/each}
 </div>
-
-<style>
-  .sections-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-</style>
