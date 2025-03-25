@@ -15,7 +15,7 @@
       includePortrait={section.includePortrait}
     >
       {#if section.id === "ml"}
-        <MachineLearning color="black" size="4"/>
+        <MachineLearning color="black" size="10"/>
       {:else}
         <p>{@html section.content}</p>
       {/if}
