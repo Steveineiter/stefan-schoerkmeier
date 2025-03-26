@@ -67,6 +67,7 @@
   header {
     background-color: #000000;
     color: white;
+    border-bottom: 2px solid #ffffff;
     padding: 3rem;
     position: sticky;
     top: 0;

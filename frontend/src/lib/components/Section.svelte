@@ -26,7 +26,7 @@
 
 <style>
   section {
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 10rem;
     border-bottom: 1px solid #eee;
     scroll-margin-top: 4rem;
@@ -41,6 +41,7 @@
   .section-container {
     display: flex;
     width: 100%;
+    padding-top: 2rem
   }
 
   /* Position styles */
