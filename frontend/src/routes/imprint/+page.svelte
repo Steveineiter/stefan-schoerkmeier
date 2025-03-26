@@ -1,7 +1,6 @@
 <script>
     const IBAN = "DE22 1001 1001 2625 9763 37"
     const BIC = "NTSBDEB1XXX"
-
 </script>
 
 <div class="container">
