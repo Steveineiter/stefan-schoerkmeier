@@ -1,7 +1,10 @@
 
 
 <footer>
-  &copy; All rights reserved. | <a href="/imprint">Imprint</a> | <a href="/agb">AGB</a> | <a href="/data-protection">Data Protection</a>
+  &copy; All rights reserved.
+  | <a href="/imprint">Imprint</a>
+  | <a href="/documents/agb-it-programmierdienstleistungen-b2b.pdf" target="_blank">AGB</a>
+  | <a href="/data-protection">Data Protection</a>
 </footer>
 
 <style>
