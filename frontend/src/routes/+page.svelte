@@ -2,8 +2,11 @@
   import Section from '$lib/components/Section.svelte';
   import { sections } from '$lib/sections.js'
   import MachineLearning from './MachineLearning.svelte'
+  import Navbar from "$lib/components/Navbar.svelte";
 
 </script>
+
+<Navbar />
 
 <div class="sections-container">
   {#each sections as section, i}
@@ -22,5 +25,6 @@
     </Section>
   {/each}
 </div>
+
 
 

@@ -20,7 +20,7 @@
       name: "GitHub",
       url: "https://github.com/steveineiter",
       icon: "github"
-    }
+    },
   ];
 
   // ===================================================================
@@ -43,7 +43,9 @@
 
 <header>
   <div class="header-content">
-    <h1>{myName}</h1>
+    <a href="/" data-sveltekit-preload-data>
+      <h1>{myName}</h1>
+    </a>
     {#key currentIndex}
 	<h2 in:typewriter={{ speed: 1.5 }}>
 		{messages[currentIndex] || ''}
@@ -58,6 +60,11 @@
           <span>{social.name}</span>
         </a>
       {/each}
+      <a href="/blog" >
+        <Icon name="blog" width="16px" height="16px" fill="white" class="icon" />
+        <span>Blog</span>
+      </a>
+
     </div>
   </div>
 </header>
@@ -84,11 +91,17 @@
   h1 {
     margin: 0;
     font-size: xxx-large;
+    cursor:pointer;
   }
 
   h2 {
     margin:0;
     min-height: 1.5em
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit
   }
 
   .social-links {

@@ -1,17 +1,23 @@
 <script>
   import Header from '$lib/components/Header.svelte';
-  import Navbar from '$lib/components/Navbar.svelte';
+  import Footer from '$lib/components/Footer.svelte';
+  import { page } from '$app/state';
+
+  const isHomeDir = page.url.pathname === "/"
 </script>
+
+
+
 
 <div class="app-container">
   <Header />
   <div class="content-container">
-    <Navbar />
     <main>
       <slot />
     </main>
   </div>
 </div>
+<Footer />
 
 <style>
   .app-container {

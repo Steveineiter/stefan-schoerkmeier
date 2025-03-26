@@ -1,5 +1,5 @@
 <script>
-  import testImage from '$lib/images/test_screenshot2.png'
+  import testImage from '$lib/images/portrait.png'
 
   export let id;
   export let title;
@@ -83,5 +83,6 @@
   img {
     max-width: 100%;
     height: auto;
+    border-radius: 25px
   }
 </style>
