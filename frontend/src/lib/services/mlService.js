@@ -1,6 +1,5 @@
 // lib/services/mlService.js
 export async function predictNumber(imageData) {
-  console.log(imageData)
   try {
     const response = await fetch('/api/predict-digit', {
       method: 'POST',

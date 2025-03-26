@@ -8,6 +8,7 @@
 	let canvas = $state();
 	let context = $state();
 	let coords = $state();
+	let prediction = $state()
 
 
 
@@ -15,8 +16,10 @@
 		context = canvas.getContext('2d');
 
 		// Set fixed dimensions instead of using window size
-		canvas.width = 500;
-		canvas.height = 500;
+		canvas.width = 28;
+		canvas.height = 28;
+
+		drawBackground()
 
 		return () => {};
 	});
@@ -24,7 +27,13 @@
 	function clearCanvas() {
 		if (context) {
 			context.clearRect(0, 0, canvas.width, canvas.height);
+			drawBackground()
 		}
+	}
+
+	function drawBackground() {
+		context.fillStyle = "black";
+		context.fillRect(0, 0, canvas.width, canvas.height)
 	}
 
 	async function recognizeNumber() {
@@ -33,11 +42,12 @@
       const pixels = context.getImageData(0, 0, canvas.width, canvas.height).data;
 	  console.log(pixels)
 	  const grayscalePixels = convertToGrayscale(pixels, canvas.width, canvas.height);
-	  const resizedPixels = resizeImage(grayscalePixels, canvas.width, canvas.height, 28, 28)
-      const input = convertDictTo2DListWithValues(resizedPixels)
+	  // const resizedPixels = resizeImage(grayscalePixels, canvas.width, canvas.height, 28, 28)
+      const input = convertDictTo2DListWithValues(grayscalePixels)
 
       // Call the prediction service
-      const prediction = await predictNumber(input);
+      const response = await predictNumber(input);
+	  prediction = response.prediction
     } catch (error) {
       console.error('Error recognizing number:', error);
       alert('Failed to recognize number');
@@ -46,7 +56,7 @@
 
 
 </script>
-
+<p>TODO write about machine learning</p>
 <div class="canvas-container">
 	<canvas
 		bind:this={canvas}
@@ -60,7 +70,7 @@
 
 			context.fillStyle = color;
 			context.beginPath();
-			context.arc(coords.x, coords.y, size / 2, 0, 2 * Math.PI);
+			context.arc(coords.x * (28 / rect.width), coords.y * (28 / rect.height), size / 2, 0, 2 * Math.PI);
 			context.fill();
 		}}
 		onpointerleave={() => {
@@ -85,8 +95,8 @@
 				context.lineWidth = size;
 				context.lineCap = 'round';
 				context.beginPath();
-				context.moveTo(previous.x, previous.y);
-				context.lineTo(coords.x, coords.y);
+				context.moveTo(previous.x * (28 / rect.width), previous.y * (28 / rect.height));
+				context.lineTo(coords.x * (28 / rect.width), coords.y * (28 / rect.height));
 				context.stroke();
 			}
 		}}
@@ -106,7 +116,16 @@
 		Reset Canvas
 	  </button>
 	</div>
+	<div class="prediction-result">
+		<h3>Recognized number: {prediction}</h3>
+	</div>
+	<div>
+		<p>TODO create visualization & talk about MNIST data and why this is interesting to see (for such a "easy" problem
+		we need so many neurons - imaging with real image data! :o cool)</p>
+	</div>
 </div>
+
+
 
 
 <style>
@@ -119,7 +138,8 @@
 	canvas {
 		width: 100%;
 		height: 100%;
-		border: 1px solid #ccc; /* Optional: adds a border to see the canvas */
+		border: 1px solid #000000;
+		image-rendering: pixelated;
 	}
 
 	.preview {
@@ -150,6 +170,10 @@
 		border: none;
 		border-radius: 4px;
 		cursor: pointer;
+	}
+
+	.prediction-result {
+    	text-align: left;
 	}
 
 

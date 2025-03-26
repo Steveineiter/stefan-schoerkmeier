@@ -6,30 +6,29 @@ export function convertToGrayscale(pixels, width, height) {
     for (let x = 0; x < width; x++) {
       const idx = (y * width + x) * 4;
 
-      // Check alpha value (pixels[idx + 3])
-      // If alpha is high (opaque), set to black (0)
-      // If alpha is low (transparent), set to white (255)
+      // Extract RGBA values
+      const red = pixels[idx];
+      const green = pixels[idx + 1];
+      const blue = pixels[idx + 2];
       const alpha = pixels[idx + 3];
 
-      // You might want to adjust this threshold based on your drawing
-      const threshold = 128;
+      // Calculate grayscale intensity using a weighted average
+      // Common weights: 0.299 for red, 0.587 for green, 0.114 for blue
+      const intensity = 0.299 * red + 0.587 * green + 0.114 * blue;
 
-      if (alpha > threshold) {
-        grayscale[y * width + x] = 0;  // Black
+      // Optionally, factor in alpha (e.g., scale intensity by alpha/255)
+      const adjustedIntensity = intensity * (alpha / 255);
 
-        // Debug output for the first few detected pixels
-        if (grayscale[y * width + x] === 0) {
-          console.log("Found black pixel at", x, y, "with alpha", alpha);
-        }
-      } else {
-        grayscale[y * width + x] = 255;  // White
-      }
+      // Assign the grayscale value to the output array
+      grayscale[y * width + x] = adjustedIntensity;
     }
   }
 
   return grayscale;
 }
 
+// This was used because my first approach was to use a 500x500 canvas. But this led to a weird behaviour of the
+//   prediction. I assume that is because the pixels weren't captured correctly.
 export function resizeImage(pixels, origWidth, origHeight, newWidth, newHeight) {
   // Create new array for the resized image
   const resized = new Uint8ClampedArray(newWidth * newHeight);

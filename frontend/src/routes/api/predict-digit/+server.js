@@ -3,9 +3,8 @@ import { json } from '@sveltejs/kit';
 export async function POST({ request }) {
   try {
     const { imageData } = await request.json();
-
-    console.log("\nHello from server")
     console.log(JSON.stringify({ greyscale_image: imageData }))
+
     // TODO call backend instead of ML service
     const response = await fetch('http:localhost:4242/predict-handwritten-digit', {
       method: 'POST',
