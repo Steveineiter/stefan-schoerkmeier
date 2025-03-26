@@ -1,6 +1,4 @@
 <script>
-  import testImage from '$lib/images/portrait.png'
-
   export let id;
   export let title;
   export let paddingTop = "5rem";
@@ -18,7 +16,7 @@
     </div>
     {#if includePortrait}
       <div class="image-container">
-        <img src={testImage} alt="{title} image">
+        <img src="/images/portrait.png" alt="{title} image">
       </div>
     {/if}
   </div>
@@ -28,6 +26,7 @@
   section {
     min-height: 80vh;
     padding: 10rem;
+    padding-left: 13rem;
     border-bottom: 1px solid #eee;
     scroll-margin-top: 4rem;
     display: flex;
