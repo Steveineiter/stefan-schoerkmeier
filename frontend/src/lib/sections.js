@@ -1,5 +1,3 @@
-
-
 export const sections = [
     { id: "about",
       title: "About me",
