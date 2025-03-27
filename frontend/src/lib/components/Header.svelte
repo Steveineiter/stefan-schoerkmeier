@@ -126,4 +126,14 @@
   svg {
     vertical-align: middle;
   }
+   @media (max-width: 1024px) {
+     header {
+       padding: 1rem 0 2rem 0.2rem;
+
+     }
+
+     h2 {
+      min-height: 2.5em
+     }
+   }
 </style>

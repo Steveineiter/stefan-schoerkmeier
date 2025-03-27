@@ -86,8 +86,12 @@
 </div>
 
 <style>
-    .container {
-        padding: 1rem 10rem 5rem 5rem
+   @media (min-width: 1024px) {
+        .container {
+            padding: 1rem 10rem 5rem 5rem
+        }
     }
-
+    .container {
+        padding-bottom: 5rem;
+    }
 </style>

@@ -25,12 +25,11 @@
 <style>
   section {
     min-height: 80vh;
-    padding: 10rem;
-    padding-left: 13rem;
     border-bottom: 1px solid #eee;
     scroll-margin-top: 4rem;
     display: flex;
     flex-direction: column;
+    padding: 10rem 10rem 10rem 13rem;
   }
 
   h2 {
@@ -40,10 +39,9 @@
   .section-container {
     display: flex;
     width: 100%;
-    padding-top: 2rem
+    padding-top: 2rem;
   }
 
-  /* Position styles */
   .left {
     align-items: flex-start;
     text-align: left;
@@ -54,22 +52,21 @@
     text-align: right;
   }
 
-  /* Portrait layout styles - now 50/50 split */
   .with-portrait .text-content {
-    flex: 1; /* Takes 50% of the space */
+    flex: 1;
     padding-right: 2rem;
   }
 
   .with-portrait .image-container {
-    flex: 1; /* Takes 50% of the space */
+    flex: 1;
   }
 
   .text-only .text-content {
-    flex: 1; /* Takes full width */
+    flex: 1;
   }
 
   .content {
-    max-width: 100%; /* Changed from 60% to allow proper flexbox layout */
+    max-width: 100%;
   }
 
   .image-container {
@@ -82,6 +79,40 @@
   img {
     max-width: 100%;
     height: auto;
-    border-radius: 25px
+    border-radius: 25px;
+  }
+
+   /********************************* Mobile screens (max-width: 640px) *********************************/
+  @media (max-width: 1023px) {
+    section {
+      padding: 0;
+    }
+
+    .section-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+
+    .with-portrait .image-container {
+      order: -1; /* Show the image first on mobile */
+      padding: 0 0 5rem 0;
+
+    }
+
+    .with-portrait .text-content {
+      padding-right: 0;
+    }
+  }
+
+  /********************************* Desktop and larger screens *********************************/
+  @media (min-width: 1024px) {
+    .with-portrait .image-container {
+      order: 1; /* Show the image on the right on larger screens */
+    }
+
+    .with-portrait .text-content {
+      order: 0;
+    }
   }
 </style>

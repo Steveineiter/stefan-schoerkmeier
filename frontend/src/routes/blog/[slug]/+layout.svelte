@@ -22,15 +22,15 @@
 
 
 <style>
+	.layout {
+		padding-bottom: 5rem;
+	}
 	@media (min-width: 640px) {
 		.layout {
 			display: grid;
 			gap: 2em;
 			grid-template-columns: 1fr 16em;
-		}
-	}
-	.layout {
 			padding:  3rem 5rem 5rem 5rem;
 		}
-
+	}
 </style>

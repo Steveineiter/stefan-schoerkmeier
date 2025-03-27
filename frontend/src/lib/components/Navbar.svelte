@@ -33,7 +33,8 @@
     width: 200px;
     height: 100%;
     padding: 1rem;
-    position: fixed
+    position: fixed;
+    display: none;
   }
 
   ul {
@@ -59,5 +60,11 @@
   button:hover {
     background-color: transparent;
     font-style: oblique;
+  }
+
+  @media (min-width: 1024px) {
+    nav {
+      display: block;
+    }
   }
 </style>

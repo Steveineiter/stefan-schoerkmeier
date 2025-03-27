@@ -144,19 +144,18 @@
 <!--	</div>-->
 
 <style>
-
-	p{
+	p {
 		text-align: left;
 	}
+
 	.canvas-container {
-	    position: relative;
-	    width: 500px;
-	    height: 500px;
-	    margin: 0 auto;
-	    display: flex;
-	    flex-direction: column;
-	    /*align-items: center;*/
-}
+		position: relative;
+		width: 500px;
+		height: 500px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+	}
 
 	canvas {
 		width: 100%;
@@ -169,10 +168,11 @@
 		display: flex;
 		gap: 200px;
 		margin-top: 10px;
-		justify-content: flex-end
+		justify-content: flex-end;
 	}
 
-	.reset-button, .predict-button {
+	.reset-button,
+	.predict-button {
 		padding: 8px 16px;
 		font-size: 16px;
 		background-color: #000000;
@@ -183,11 +183,37 @@
 	}
 
 	.prediction-result {
-    	text-align: left;
+		text-align: left;
 	}
-
 
 	.reset-button:hover {
 		background-color: #000000;
+	}
+
+	@media (max-width: 1024px) {
+		.canvas-container {
+			width: 100%;
+			height: auto;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		canvas {
+			width: 100%;
+			height: auto;
+		}
+
+		.button-container {
+			flex-direction: column;
+			gap: 10px;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.reset-button,
+		.predict-button {
+			width: 100%;
+			font-size: 14px;
+		}
 	}
 </style>
