@@ -15,4 +15,4 @@ app.include_router(self_hosted_machine_learning_router)
 
 @app.get("/healthy")
 def health_check():
-    return {"status": "Healthy"}
+    return {"status": "healthy"}
