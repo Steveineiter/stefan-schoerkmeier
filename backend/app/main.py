@@ -16,3 +16,7 @@ app.include_router(self_hosted_machine_learning_router)
 @app.get("/healthy")
 def health_check():
     return {"status": "healthy"}
+
+# Used to debug in pycharm.
+# if __name__ == "__main__":
+#     uvicorn.run(app, host="0.0.0.0", port=4242)

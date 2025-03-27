@@ -9,12 +9,12 @@ export async function predictNumber(imageData) {
     });
 
     if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
+      throw new Error(`Service: HTTP error! Status: ${response.status}`);
     }
 
     return await response.json();
   } catch (error) {
-    console.error("Error predicting number:", error);
+    console.error("Service: Error predicting number:", error);
     throw error;
   }
 }

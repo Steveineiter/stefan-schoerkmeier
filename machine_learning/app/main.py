@@ -19,7 +19,8 @@ app = FastAPI(
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = ConvolutionalNetwork().to(device)
-model.load_state_dict(torch.load("models/handwritten_digit_classifier.pt"))
+model.load_state_dict(torch.load("models/handwritten_digit_classifier.pt", map_location=device))
+model = model.to(device)
 model.eval()
 
 
@@ -28,7 +29,7 @@ model.eval()
           response_model=PredictionResponse,
 )
 async def predict_handwritten_digit(grayscale_image: GrayscaleImage, ):
-    input_image = torch.tensor(grayscale_image.greyscale_image, device='cuda').unsqueeze(0).unsqueeze(0)
+    input_image = torch.tensor(grayscale_image.greyscale_image, device='cuda').unsqueeze(0).unsqueeze(0).to(device)
 
     with torch.no_grad():
         output = model(input_image)
@@ -39,9 +40,9 @@ async def predict_handwritten_digit(grayscale_image: GrayscaleImage, ):
 
 @app.get("/healthy")
 def health_check():
-    return {"status": "Healthy"}
+    return {"status": "healthy"}
 
 
 # Used to debug in pycharm.
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=4242)
+# if __name__ == "__main__":
+#     uvicorn.run(app, host="0.0.0.0", port=4242)
