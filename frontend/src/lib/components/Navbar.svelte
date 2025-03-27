@@ -1,5 +1,5 @@
 <script>
-  import { sections } from '$lib/sections.js'
+  import { sections } from '$lib/text-data/sections.js'
   // const sections = [
   //   { id: 'about', label: 'About' },
   //   { id: 'ml', label: 'Machine Learning' },

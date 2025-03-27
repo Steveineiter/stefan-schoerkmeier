@@ -1,5 +1,5 @@
 // // Taken from https://svelte.dev/tutorial/kit/layout-data
-import { posts } from './data.js';
+import { posts } from '$lib/text-data/blog-posts.js';
 
 export function load() {
 	return {

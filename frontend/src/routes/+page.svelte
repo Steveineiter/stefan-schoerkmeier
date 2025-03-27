@@ -1,6 +1,6 @@
 <script>
   import Section from '$lib/components/Section.svelte';
-  import { sections } from '$lib/sections.js'
+  import { sections } from '$lib/text-data/sections.js'
   import MachineLearning from './MachineLearning.svelte'
   import Navbar from "$lib/components/Navbar.svelte";
 
