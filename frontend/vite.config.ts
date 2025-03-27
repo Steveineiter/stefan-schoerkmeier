@@ -11,10 +11,11 @@ export default defineConfig({
 				plugins: [svelteTesting()],
 				test: {
 					name: 'client',
+					globals: true,
 					environment: 'jsdom',
 					clearMocks: true,
-					include: ['src/**/*.svelte.{test,spec}.{js,ts}'],
-					exclude: ['src/lib/server/**'],
+					include: ['tests/**/*.svelte.{test,spec}.{js,ts}'],
+					// exclude: ['src/lib/server/**'],
 					setupFiles: ['./vitest-setup-client.ts']
 				}
 			},
