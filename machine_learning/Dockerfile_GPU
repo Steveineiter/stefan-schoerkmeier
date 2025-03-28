@@ -1,0 +1,24 @@
+# Not sure if this is the correct way to use GPU on docker.
+FROM ubuntu:24.04
+
+WORKDIR /app
+
+# Install nvidia
+RUN apt-get -y update && apt-get -y install curl gpg sed
+RUN curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
+  && curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
+    sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
+    tee /etc/apt/sources.list.d/nvidia-container-toolkit.list \
+  && apt-get update && apt-get install -y nvidia-container-toolkit
+
+# Install Python and pip
+RUN apt-get update && apt-get install -y python3 python3-pip python3-venv && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+RUN python3 -m venv /app/venv
+COPY requirements.txt .
+RUN /app/venv/bin/pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+EXPOSE 4242
+CMD ["/app/venv/bin/uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "4242"]
