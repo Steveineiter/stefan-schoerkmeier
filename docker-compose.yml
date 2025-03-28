@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   backend:
     build:
@@ -14,18 +12,11 @@ services:
 
   ml:
     build:
-      context: ./ml
+      context: ./machine_learning
     ports:
       - "4242:4242"
     networks:
       - app-network
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
     restart: unless-stopped
 
   frontend:
