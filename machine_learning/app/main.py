@@ -28,7 +28,8 @@ model.eval()
           response_model=PredictionResponse,
 )
 async def predict_handwritten_digit(grayscale_image: GrayscaleImage, ):
-    input_image = torch.tensor(grayscale_image.greyscale_image, device=device).unsqueeze(0).unsqueeze(0).to(device)
+    model.eval()
+    input_image = torch.tensor(grayscale_image.grayscale_image, device=device).unsqueeze(0).unsqueeze(0).to(device)
 
     with torch.no_grad():
         output = model(input_image)
