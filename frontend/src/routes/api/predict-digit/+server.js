@@ -1,12 +1,15 @@
 import { json } from '@sveltejs/kit';
+import { env } from '$env/dynamic/private';
 
 export async function POST({ request }) {
+ const backendUrl = env.BACKEND_URL || 'http://localhost:8080';
+
   try {
     const { imageData } = await request.json();
-    console.log(JSON.stringify({ greyscale_image: imageData }))
+    // console.log(JSON.stringify({ greyscale_image: imageData }))
 
     // TODO call backend instead of ML service
-    const response = await fetch('http://localhost:4242/predict-handwritten-digit', {
+    const response = await fetch(`${backendUrl}/ml/predict`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
