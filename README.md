@@ -56,6 +56,26 @@ npm install
 npm run dev -- --open
 ```
 
+### AWS
+to connect to ec2 run:
+```bash
+ssh -i <key.pem> ubuntu@<instance-public-ip)
+ssh -i pc_ubuntu.pem ubuntu@52.57.6.134
+```
+Then to upload files use
+```bash
+rsync -i pc_ubuntu.pem <file/folder_to_upload> ubuntu@52.57.6.134:~/<folder>
+```
+
+After that, for our MVP we can use the docker-compose of this project. To enable https etc we use Caddy and the guide from https://www.youtube.com/watch?v=nQdyiK7-VlQ is nice in general. After that we create a domain with aws elastic ip and route53 and a domain registry and done.
+
+#### Important places AWS
+- ec2
+  - SecurityGroup
+  - Elastic IPs
+- Route53
+
+
 ---
 
 ## Plan

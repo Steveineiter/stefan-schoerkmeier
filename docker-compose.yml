@@ -23,11 +23,12 @@ services:
     build:
       context: ./frontend
     ports:
-      - "5000:5000"
+      - "3000:3000"
     networks:
       - app-network
     environment:
       - BACKEND_URL=http://backend:8080
+      - PUBLIC_URL=52.57.6.134  # ec2 public ip
     depends_on:
       - backend
     restart: unless-stopped
