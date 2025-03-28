@@ -16,7 +16,6 @@ app = FastAPI(
 
 # TODO add in full product
 # app.add_middleware()
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = ConvolutionalNetwork().to(device)
 model.load_state_dict(torch.load("models/handwritten_digit_classifier.pt", map_location=device))
@@ -29,7 +28,7 @@ model.eval()
           response_model=PredictionResponse,
 )
 async def predict_handwritten_digit(grayscale_image: GrayscaleImage, ):
-    input_image = torch.tensor(grayscale_image.greyscale_image, device='cuda').unsqueeze(0).unsqueeze(0).to(device)
+    input_image = torch.tensor(grayscale_image.greyscale_image, device=device).unsqueeze(0).unsqueeze(0).to(device)
 
     with torch.no_grad():
         output = model(input_image)
