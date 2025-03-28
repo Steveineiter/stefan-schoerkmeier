@@ -6,7 +6,7 @@ class PredictionResponse(BaseModel):
     prediction: int
 
 class GrayscaleImage(BaseModel):
-    greyscale_image: Annotated[
+    grayscale_image: Annotated[
         list[
             Annotated[list[float], Len(min_length=28, max_length=28)]
         ],
