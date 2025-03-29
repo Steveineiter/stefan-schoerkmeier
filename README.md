@@ -1,8 +1,6 @@
 # stefan-schoerkmeier
 My personal web page which showcases my skills as a fullstack developer. 
 
-TODO add steps to run it locally. 
-
 ---
 
 ## Run it locally (Ubuntu)
@@ -77,15 +75,6 @@ After that, for our MVP we can use the docker-compose of this project. To enable
 
 
 ---
-
-## Plan
-1. ~~train model / make weights accessible~~
-2. ~~create backend / ml model call and ml api~~
-3. ~~create prediction via swagger-ui~~
-4. implement frontend
-5. everything should work on my machine xD
-6. Create ci/cd pipeline, let in run locally on docker
-7. Purchase schoerkmeier.dev domain and deploy on AWS
 
 
 # Lessons learned
