@@ -70,7 +70,7 @@
     background-color: #000000;
     color: white;
     border-bottom: 2px solid #ffffff;
-    padding: 3rem;
+    padding: 1.5rem;
     position: sticky;
     top: 0;
     width: 100%;
@@ -86,7 +86,7 @@
 
   h2 {
     margin:0;
-    min-height: 1.5em
+    min-height: 1.4em
   }
 
   a {
@@ -96,14 +96,14 @@
 
   .social-links {
     display: flex;
-    gap: 20px;
-    margin-top: 0.5rem;
+    gap: 30px;
   }
 
   .header-content {
     max-width: 1000px;
     margin: 0 auto;
   }
+
   .social-links a {
     display: flex;
     align-items: center;

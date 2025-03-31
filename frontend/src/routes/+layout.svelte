@@ -45,4 +45,14 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  :global(h1),
+  :global(h2),
+  :global(h3),
+  :global(span) {
+    font-family: 'Source Code Pro', monospace;
+  }
+  :global(p) {
+    font-family: 'Roboto', sans-serif;
+  }
 </style>
