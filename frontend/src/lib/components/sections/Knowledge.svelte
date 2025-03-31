@@ -45,6 +45,7 @@
     <p>If you wonder, <b>why I only cite science based sources</b> the reason is simple: Time & results. The amazing thing with science
     is, that it will work for most people. With that I know I will have great progress with a fraction of time investment I would need to make
     if I follow the advice of a random Influencer (which might even do harm) and try out EVERYTHING whether it works for me or not.</p>
+    <hr>
 
     <h2>Tech channels</h2>
     <ul>
@@ -55,11 +56,12 @@
       <li><a href="https://www.youtube.com/@fknight" target="_blank"> ForrestKnight</a> - all around / often interesting new topics</li>
       <li><a href="https://www.youtube.com/@ThePrimeagen" target="_blank"> ThePrimeagen</a> - I basically learned vim motions because of him</li>
     </ul>
+    <hr>
 
-    <h2>Books which gave me great lessons</h2>
+    <h2>Books that taught me a lot</h2>
     <ul>
       <li><b>How to Win Friends & Influence People (Dale Carnegie)</b> - amazing book, I think everybody should read this </li>
-      <li><b>Awaken the Giant Within (Anthony Robbins)</b> - If you have read one selfhelpbook you have read them all, but I
+      <li><b>Awaken the Giant Within (Anthony Robbins)</b> - if you have read one selfhelpbook you have read them all, but I
       liked this one. I got my most important mind set through this book: I can always grow to the kind of person I want to be</li>
       <li><b>The Lean Startup (Eric Ries)</b> - great read, I think this relevant for each company which works in a dynamic environment </li>
       <li><b>Zwischen Stahl und Schokolade (Prodanovic; Unterhuber)</b> - interesting stories of austrian businesses and the people behind</li>
