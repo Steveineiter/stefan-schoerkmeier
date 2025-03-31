@@ -1,15 +1,19 @@
 <!--Taken from https://svelte.dev/tutorial/svelte/actions, improved with Claude Sonnet 3.7 and myself. -->
 <script>
+	import { on } from "svelte/events"
 	import {predictNumber} from "$lib/services/mlService.js";
-	import {convertDictTo2DListWithValues, convertToGrayscale, resizeImage} from "./imageManipulation.js";
+	import {convertDictTo2DListWithValues, convertToGrayscale, resizeImage} from "../../utility/imageManipulation.js";
 
-	let { color, size } = $props();
+	let { title } = $props();
+
+
+	let DRAWING_COLOR = "white";
+	let DRAWING_SIZE = 1;
 
 	let canvas = $state();
 	let context = $state();
 	let coords = $state();
 	let prediction = $state()
-
 
 
 	$effect(() => {
@@ -56,7 +60,7 @@
 
 
 </script>
-
+<h2>{@html title}</h2>
 <p>
 	Machine learning (often referred to as Artificial Intelligence (AI) or Künstliche Intelligenz (KI) in german) has
 	many use cases. Currently, it is widely known for its applications as large language models (LLMs) like ChatGPT.
@@ -71,6 +75,7 @@
 	<canvas
 		bind:this={canvas}
 		onpointerdown={(e) => {
+			e.preventDefault();
 			// Use clientX/Y relative to canvas position
 			const rect = canvas.getBoundingClientRect();
 			coords = {
@@ -78,9 +83,9 @@
 				y: e.clientY - rect.top
 			};
 
-			context.fillStyle = color;
+			context.fillStyle = DRAWING_COLOR;
 			context.beginPath();
-			context.arc(coords.x * (28 / rect.width), coords.y * (28 / rect.height), size / 2, 0, 2 * Math.PI);
+			context.arc(coords.x * (28 / rect.width), coords.y * (28 / rect.height), DRAWING_SIZE / 2, 0, 2 * Math.PI);
 			context.fill();
 		}}
 		onpointerleave={() => {
@@ -98,11 +103,11 @@
 				y: e.clientY - rect.top
 			};
 
-			if (e.buttons === 1) {
+			if (e.buttons === 1 || e.pointerType === "touch") {
 				e.preventDefault();
 
-				context.strokeStyle = color;
-				context.lineWidth = size;
+				context.strokeStyle = DRAWING_COLOR;
+				context.lineWidth = DRAWING_SIZE;
 				context.lineCap = 'round';
 				context.beginPath();
 				context.moveTo(previous.x * (28 / rect.width), previous.y * (28 / rect.height));
@@ -110,6 +115,8 @@
 				context.stroke();
 			}
 		}}
+
+
 	></canvas>
 
 	<div class="button-container">
@@ -144,8 +151,16 @@
 <!--	</div>-->
 
 <style>
+	h2 {
+		text-align: right;
+	}
 	p {
 		text-align: left;
+		margin-left: auto;
+		margin-right: 0;
+		flex: 1;
+		min-width: 300px;
+		max-width: 65ch;
 	}
 
 	.canvas-container {
@@ -189,8 +204,8 @@
 	.reset-button:hover {
 		background-color: #000000;
 	}
-
-	@media (max-width: 1024px) {
+  /********************************* Mobile screen *********************************/
+	@media (max-width: 768px) {
 		.canvas-container {
 			width: 100%;
 			height: auto;
@@ -199,7 +214,7 @@
 		}
 
 		canvas {
-			width: 100%;
+			width: 80%;
 			height: auto;
 		}
 

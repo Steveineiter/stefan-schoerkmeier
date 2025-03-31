@@ -1,8 +1,6 @@
 <script>
   import Icon from './Icons.svelte';
-  import { fade } from 'svelte/transition';
-  import {typewriter} from '$lib/components/transitions.js'
-
+  import {typewriter} from '$lib/utility/transitions.js'
 
   const myName = "Stefan Schörkmeier";
   const socials = [
@@ -36,9 +34,6 @@
       clearInterval(interval);
     };
   });
-
-  // ===================================================================
-
 </script>
 
 <header>
@@ -83,11 +78,6 @@
     box-sizing: border-box;
   }
 
-  .header-content {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
   h1 {
     margin: 0;
     font-size: xxx-large;
@@ -110,6 +100,10 @@
     margin-top: 0.5rem;
   }
 
+  .header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
   .social-links a {
     display: flex;
     align-items: center;
@@ -126,10 +120,10 @@
   svg {
     vertical-align: middle;
   }
+
    @media (max-width: 1024px) {
      header {
        padding: 1rem 0 2rem 0.2rem;
-
      }
 
      h2 {
