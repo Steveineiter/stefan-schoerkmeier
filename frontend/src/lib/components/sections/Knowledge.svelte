@@ -22,12 +22,15 @@
       <li>Avoid too much Salt </li>
       <li>If you drink alcohol, do so in moderation </li>
     </ol>
-    <p>From <a href="https://www.youtube.com/watch?v=5s2U4GGBZak" target="_blank">newer research</a> we know that alcohol is even bad
-    in low doses. The cool part about those 7 things is, that we can <b>easily know whether something is healthy</b> or not.
-    Eating a Wiener Schnitzel with fries, a dessert, and a beer each day? Unhealthy since we are breaking each of the findings above
-    (except they are really small portions and you eat great for the rest of the day).
-    For me, the best diet to archive that is a <b>plant based whole food</b> diet with 1-2 portions of meat/fish per week.
-    Because with that I fulfill those 7 findings by default while still being flexible enough to going out dining with friends.
+    <p>
+      From <a href="https://www.youtube.com/watch?v=5s2U4GGBZak" target="_blank">newer research</a> we know that alcohol is even bad
+      in low doses. The cool part about those 7 things is, that we can <b>easily know whether something is healthy</b> or not.
+      Eating a Wiener Schnitzel with fries, a dessert, and a beer each day? Unhealthy since we are breaking each of the findings above
+      (except they are really small portions and you eat great for the rest of the day). We can even put <b>numbers</b> to it.
+      Sugar should be no more than 5% of your daily calories, saturated fats no more than 10% and salt no more than 2.3 grams.
+      If you consume 2500 calories per day (average male) this means around 32g sugar, and around 27 grams of saturated fat.
+      For me, the best diet to archive that is a <b>plant based whole food</b> diet with 1-2 portions of meat/fish per week.
+      Because with this pattern I fulfill the 7 findings by default while still being flexible enough to going out dining with friends.
     </p>
     <p> Besides diet, <b>sleep and exercise</b> are the other parts of a healthy life. In a nutshell we want 7-9 hours
       of high quality sleep, 2-3 hours of weight lifting and 2-3 hours of moderate cardio per week for optimal health.
