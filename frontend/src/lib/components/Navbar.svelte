@@ -53,6 +53,7 @@
     cursor: pointer;
     font-size: 1rem;
     text-align: left;
+    font-family: 'Source Code Pro', monospace;
     padding: 0.5rem;
     width: 100%;
   }
