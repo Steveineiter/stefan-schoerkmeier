@@ -3,27 +3,142 @@
 </script>
 
 <div class="projects-container">
-  <div class="text-content">
-    <h2>{title}</h2>
+    <div class="text-content">
+        <h2>{title}</h2>
+        <h3>CERN</h3>
 
+        <p><a href="/documents/employment-attestation.pdf" target="_blank">Employment Attention</a> </p>
+        <p><a href="/documents/elias-sandner-letter-of-recommendation.pdf" target="_blank">Letter of Recommendation</a> </p>
+        <br>
+        <p>The UI and main functionalities of Neutrino Review:</p>
+        <div class="image-content">
+            <img src="/images/llm-screening.png" alt="Neutrino Review Screening">
+        </div>
+        <p>My database design which focuses on ensuring scalability and flexibility:</p>
+        <div class="image-content">
+            <img src="/images/database-design.png" alt="My Database Design">
+        </div>
+    <p>
+      As a Full Stack Developer at CERN, I worked with an international team and in collaboration with the WHO,
+      contributing independently to key areas of the <a href="https://gitlab.cern.ch/caimira/neutrinoreview/-/tree/master?ref_type=heads">
+      CAiMIRA systematic review</a> project. Here are the main aspects of my work:
+    </p>
+    <ol>
+        <li><b>System and Database Design:</b> I improved the design of the system architecture and database using PostgreSQL,
+            creating efficient data models and optimizing queries for scalability.</li>
+        <li><b>Backend and LLM Development:</b> I developed scalable server-side logic (16 APIs) with FastAPI,
+            integrating APIs and ensuring secure data handling. I implemented the API call for the review process
+            via an LLM pipeline which used CERN's Acc-GPT.</li>
+        <li><b>Frontend Modifications:</b> I made necessary changes to integrate CERN’s Single Sign-On (SSO) and
+            implemented new features.</li>
+        <li><b>Deployment:</b> I helped with deployment using GitLab Pages and CERN Paas (OpenShift), ensuring smooth,
+            secure access to the application.</li>
+    </ol>
+    <p>This role allowed me to collaborate with an <b>international team</b> while working independently on key project
+        components. Through this process I was able to hone following skills:</p>
+      <ul>
+          <li><b>Programming Languages:</b> Python, JavaScript</li>
+          <li><b>Frameworks:</b>FastAPI, React</li>
+          <li><b>Tools:</b>PostgreSQL, GitLab Ci/CD, OpenShift</li>
+          <li><b>Technologies:</b> OAuth, SSO, Large Language Models (LLMs)</li>
+      </ul>
+    <p>
+        Special thanks to <b>Elias Sandner</b>, <b>Igor Jakovljević</b> and <b>Mario Negovetić</b> for their guidance and support,
+        which greatly enhanced my understanding and learning.
+    </p>
+    <hr>
+<!-- --------------------------------------------------------------------------------------------------------------- -->
 
-    <h3>CERN</h3>
-    <p>CERN (da ah empfehlungsschreiben und empoyemnt attensation cern rein hauen), Data Team, Itell solution, personal projects etc</p>
-
-    <h3>Itell Solution</h3>
-    <p>Da halt sagen dass i beim ersten viel non technical skills glernt hab und eben mit kunden reden und die anderen
-    insane wichtig war weil i dann eg naming von der praxis gelernt hab und des immer im studium angewendet hab und halt
-    so viele best practices wie geht dabei eingsetzt hat was alles viel cooler gmacht hat und mir immer was bracht hat</p>
+    <h3>Itell.Solution (Startup)</h3>
+    <p>
+        At Itell.Solutions, I worked in different roles across three time periods: <b>July 2019</b>, <b>February 2020</b>,
+        and <b>August-September 2020</b>. Each phase contributed significantly to my professional growth:
+    </p>
+    <ol>
+        <li><b>Sales and Communication (July 2019):</b> I worked in the sales department, where I developed strong
+            communication and soft skills. These skills became foundational for my professional interactions.</li>
+        <li><b>Technical Best Practices (February 2020 & August-September 2020):</b> I focused on technical aspects,
+            building in Python/Django, learning and applying best practices such as:
+            <ul>
+                <li>Linting</li>
+                <li>Naming conventions</li>
+            </ul>
+            These practices became second nature and were consistently applied throughout my studies and projects.</li>
+    </ol>
+    <p>This role allowed me to develop both <b>soft skills</b> and <b>technical expertise</b>, which I continue to
+        leverage in my professional journey. Key skills and tools I honed include:</p>
+    <ul>
+        <li><b>Programming Languages:</b> Python</li>
+        <li><b>Frameworks:</b>Django</li>
+        <li><b>Tools:</b>PostgreSQL, GitLab, Git</li>
+        <li><b>Soft Skills:</b> Communication, teamwork</li>
+        <li><b>Technical Practices:</b> Code linting, naming conventions</li>
+    </ul>
+    <p>
+        I would like to express my gratitude to <b>Dominik Hütter</b> and <b>David Prott</b> who teached me a lot about business and
+        sales as well as a huge thank you to my mentor, <b>Thomas Aglassinger</b>, who helped me become a much better developer.
+    </p>
+    <hr>
+<!-- --------------------------------------------------------------------------------------------------------------- -->
 
     <h3>Personal Projects</h3>
-    <p>weil i hak gangen bin hatte i null ahnung deswegen hab i soviel gemacht wie geht, es war richtig cool wie i mei erses usefulles programm
-    usen keinan hab (auto close programs). Dann hab i halt die vielen branches fa computer science probiert und eg games gebaut
-    oder raspberry pi als minecraft server aufgesetzt etc (bild fa raspberry pi und fa game dev)</p>
+    <p><b>Beginnings</b> </p>
+     <p>
+        Unfortunately, I never came into contact with coding from a young age. None of the people I knew were developers.
+        As a teenager, I was afraid that I could destroy my computer by doing something wrong, so I never tried actual
+        coding, although I loved doing things on my computer. I attended a Handelsakademie (HAK) and chose the IT focus
+        there. But here as well, we never did more than a double for loop in VBA. So my first contact with "real" coding
+        was at university.
+    </p>
+    <p>
+        This resulted in this
+        <a href="/documents/first-python-programm.py" target="_blank">hilarious tic-tac-toe game</a>,
+        where I wrote 864 lines of code ... xD
+    </p>
+        <div class="image-content">
+            <img src="/images/first-python-program.png" alt="My Database Design">
+        </div>
+
+    <p><b>Intermediate</b> </p>
+   <p>
+       After gaining a couple of years of experience through university projects and internships, I reached a point
+       where I needed to address a personal challenge. I often played computer games late into the night, which negatively
+       impacted my academic progress. However, I couldn't find any tools that met my needs—or at least, none that I was
+       comfortable granting the necessary privileges to. As a result, I decided to create my own solution:
+       <a href="https://github.com/Steveineiter/auto_close_programs/tree/main" target="_blank">auto_close_programs</a>.
+       This was an exhilarating experience because it allowed me to solve a real-world problem in a straightforward way.
+       It taught me that a useful program doesn’t always have to be overly complex.
+    </p>
+
+    <p>
+        After that, I explored various branches of computer science, diving into areas like game development,
+        information security/ethical hacking, and networking. For instance, I experimented with setting up a Minecraft
+        server on a Raspberry Pi and explored other use cases for the device. These experiences allowed me to broaden my
+        skill set and gain hands-on exposure to different fields.
+    </p>
+    <p>One of my game development projects: A 3D RPG created with C# and Unity.</p>
+    <div class="image-content">
+     <img src="/images/game-development.png" alt="Game Dev 3D">
+    </div>
+
+    <p><b>Future</b> </p>
+    <p>
+        After exploring many different fields, I’ve discovered that machine learning and full-stack engineering are
+        where I truly belong. These areas resonate with me because they offer the potential to solve a wide range of
+        real-world problems. I’m particularly excited about the possibilities we can unlock by combining machine learning
+        with robust engineering practices to create innovative and impactful solutions. I look forward to contributing
+        to this ever-evolving field and seeing what we can achieve through the power of machine learning and code.
+
+    </p>
+    <hr>
+<!-- --------------------------------------------------------------------------------------------------------------- -->
 
     <h3>TU Graz Data Team</h3>
     <p>generell driwa schrieben dass cool war ma immer interessante sachen gehoert hat und halt durch copetitiv sachen immer
     versucht hat cutting edge sachen zu machen. Driwa schreiben dass wia silber griagt haben bei kaggle und mit Thomas und Raffael
     1. platz bei xeek, des bissl beschrieben und halt a sagen das Thomas is heavy lifting gmacht hat. </p>
+    <hr>
+<!-- --------------------------------------------------------------------------------------------------------------- -->
 
     <h3>This Project</h3>
     <p>I always start with learning (weil is halt wichtig fia quality, scalability etc. - und i bin drauf kommen jedes mal wenn
@@ -39,6 +154,11 @@
 	h2 {
 		text-align: left;
 	}
+    img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 	.text-content {
 		text-align: left;
@@ -46,4 +166,12 @@
 		min-width: 300px;
 		max-width: 75ch;
 	}
+
+    .image-content {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
 </style>
