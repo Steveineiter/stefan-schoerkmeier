@@ -5,18 +5,18 @@
 <div class="about-container">
   <div class="text-content">
     <h2>{title}</h2>
-    <p>I'm Stefan, a computer scientist crafting creative, efficient and innovative solutions. I stand for ... </p>
+    <p>I'm Stefan, a computer scientist crafting creative, efficient, and innovative solutions. I stand for:</p>
 
     <ul class="bullet-points">
-      <li>focus on quality</li>
-      <li>great communication</li>
-      <li>cutting edge technology</li>
-      <li>planning & time management</li>
+      <li>Focus on quality</li>
+      <li>Great communication</li>
+      <li>Cutting-edge technology</li>
+      <li>Planning & time management</li>
     </ul>
 
-    <p>I love to <strong>implement modern solutions</strong> and find ways how we can solve real world problems with innovative approaches.</p>
+    <p>I love to <b>implement modern solutions</b> and explore ways we can solve real-world problems with innovative approaches.</p>
 
-    <p>I think there is a lot of potential in bringing <strong>machine learning</strong> to your business and everyday life.</p>
+    <p>I believe there is tremendous potential in bringing <b>machine learning</b> to your business and everyday life.</p>
   </div>
   <div class="image-content">
     <img src="/images/portrait.png" alt="My Portrait">

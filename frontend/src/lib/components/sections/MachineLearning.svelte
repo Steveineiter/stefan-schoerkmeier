@@ -62,14 +62,14 @@
 </script>
 <h2>{@html title}</h2>
 <p>
-	Machine learning (often referred to as Artificial Intelligence (AI) or Künstliche Intelligenz (KI) in german) has
-	many use cases. Currently, it is widely known for its applications as large language models (LLMs) like ChatGPT.
+	Machine learning (often referred to as Artificial Intelligence (AI) or <i>Künstliche Intelligenz</i> (KI) in German) has
+	many use cases. Currently, it is widely recognized for its applications in large language models (LLMs) like ChatGPT.
 	<br><br>
-	This makes sense, because its performance at knowledge work is amazing. I use it more often than Google,
-	because the results are on average better than reading a random blog post about a topic.
+	This makes sense because its performance in knowledge work is amazing. Personally, I use it more often than Google,
+	as the results are, on average, better than reading a random blog post about a topic.
 	<br><br>
-	BUT besides from LLMs we should not forget the other great applications of machine learning. One of those is
-	<b>pattern recognition / prediction.</b> Try it out below :)
+	However, besides LLMs, we should not forget the other great applications of machine learning. One of these is
+	<b>pattern recognition and prediction.</b> Give it a try below :)
 </p>
 <div class="canvas-container">
 	<canvas
@@ -134,11 +134,11 @@
 
 <div>
 	<p>
-		If you are wondering, why it just won't correctly predict your perfect 1 (I did at least),
-		that is because of a fundamental rule of machine learning: It's <b>all about the data</b>. In the
+		If you are wondering why it just won't correctly predict your perfect 1 (I did, at least),
+		that’s because of a fundamental rule of machine learning: It’s <b>all about the data</b>. In the
 		<a href="https://en.wikipedia.org/wiki/MNIST_database" target="_blank" rel="noopener noreferrer">
 			MNIST dataset
-		</a>, 1 is often written as a | so our poor model never had a chance to correctly recognize it ...
+		</a>, the number 1 is often written as a |, so our poor model never really had a chance to correctly recognize it...
 	</p>
 </div>
 <!--	<div>-->

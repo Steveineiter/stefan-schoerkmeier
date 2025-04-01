@@ -132,7 +132,6 @@
     </p>
     <hr>
 <!-- --------------------------------------------------------------------------------------------------------------- -->
-
     <h3>TU Graz Data Team</h3>
     <p>
         I was part of the TU Graz Data Team for three terms.
@@ -159,13 +158,56 @@
     <hr>
 <!-- --------------------------------------------------------------------------------------------------------------- -->
 
-    <h3>This Project</h3>
-    <p>I always start with learning (weil is halt wichtig fia quality, scalability etc. - und i bin drauf kommen jedes mal wenn
-      i wo heang liegts drann weil i zu wenig grundlagen hab, deswegen sind starke grundlagen einfach
-      immer is beste - wir wollen ja a super zukunftsreiche software bauen und die braucht halt a stabiles gscheides fundament
-      ... then design ... then learning again for best practices / strucutre and then iterate (developing, desiging, learning)</p>
-    <p>TODO hier wsl auch gut a paar bilder usw rein vom design schaut mby cool aus. E </p>
+        <h3>This Project</h3>
+        <p><b>Introduction</b></p>
+        <p><a href="https://github.com/Steveineiter/stefan-schoerkmeier" target="_blank">This project</a> is meant to showcase <b>my development process</b>. One key lesson I’ve learned is that
+            <b>strong fundamentals are essential</b>—after all, you can’t build a house on sand, right? With a solid
+            foundation, building <b>high-quality, scalable, flexible, and robust applications</b> becomes more
+            straightforward, albeit not necessarily easy. The goal is always to ensure the application can grow and
+            adapt in the future.</p>
 
+        <p><b>My Process</b></p>
+        <p>Here’s how I approached this project:</p>
+        <ol>
+            <li><b>Conceptualization:</b> I started by forming a rough idea of what I wanted to achieve—a reactive
+                frontend with machine learning (ML) integration and a backend, each running in its own container.</li>
+            <li><b>Technology Research:</b> I selected the necessary tools for the project: Svelte, FastAPI, Docker,
+                GitHub Actions, and AWS for deployment. Each of these technologies was chosen based on their ability
+                to meet specific project needs and to get experience with cutting edge technology.</li>
+            <li><b>Skill Building:</b> Since I lacked strong knowledge in CI/CD, I took the time to complete courses
+                on Docker, GitHub Actions, AWS, and CI/CD in general to bridge those gaps.</li>
+            <li><b>Planning:</b> I designed a future version of the application, outlining all desired features, and
+                created a document and timeline to guide the development process.</li>
+            <li><b>Iterative Development:</b> I adopted an iterative approach: implementing, testing, gathering
+                feedback, designing/planning, and learning. The main focus was on achieving a
+                <b>Minimum Viable Product (MVP)</b>. At this stage, I accepted that not everything would follow
+                best practices, as the primary goal was to release something functional and learn what to prioritize
+                moving forward.</li>
+        </ol>
+        <p>My initial design:</p>
+        <div class="image-content">
+            <img src="/images/initial-design.png" alt="Initial Design">
+        </div>
+
+        <p><b>Reflection and Learning</b></p>
+        <p>Through feedback from friends and self-reflection, I’ve gained a clearer understanding of where I need to
+            improve. For example, I realized that <b>frontend development and writing</b> required much more effort
+            than I initially anticipated. This realization highlighted the need to strengthen my fundamentals in CSS,
+            JavaScript, and TypeScript. While my expertise lies in backend development and machine learning,
+            <b>continuous reflection and learning</b> are critical, no matter how experienced we are.</p>
+
+        <p>This project reflects not only my technical skills but also my ability to plan, iterate, and adapt.
+            It’s a testament to my belief in building strong foundations and continuously improving through feedback
+            and learning. While there’s always room for growth, this process has allowed me to sharpen my expertise
+            in multiple areas and create something I'm proud of.</p>
+
+        <ul>
+            <li><b>Programming Languages:</b> Python, JavaScript, TypeScript</li>
+            <li><b>Frameworks:</b> FastAPI, Svelte, PyTorch</li>
+            <li><b>Tools:</b> PostgreSQL, Docker, GitHub Actions, AWS</li>
+            <li><b>Soft Skills:</b> Communication, feedback, adaptability</li>
+            <li><b>Technical Practices:</b> iterative development</li>
+        </ul>
   </div>
 </div>
 
