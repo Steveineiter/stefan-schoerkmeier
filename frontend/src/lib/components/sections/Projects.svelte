@@ -106,13 +106,13 @@
        impacted my academic progress. However, I couldn't find any tools that met my needs—or at least, none that I was
        comfortable granting the necessary privileges to. As a result, I decided to create my own solution:
        <a href="https://github.com/Steveineiter/auto_close_programs/tree/main" target="_blank">auto_close_programs</a>.
-       This was an exhilarating experience because it allowed me to solve a real-world problem in a straightforward way.
+       This was an exhilarating experience because it allowed me to <b>solve a real-world problem</b> in a straightforward way.
        It taught me that a useful program doesn’t always have to be overly complex.
     </p>
 
     <p>
-        After that, I explored various branches of computer science, diving into areas like game development,
-        information security/ethical hacking, and networking. For instance, I experimented with setting up a Minecraft
+        After that, I explored various branches of computer science, diving into areas like <b>game development</b>,
+        <b>information security/ethical hacking</b>, and <b>networking</b>. For instance, I experimented with setting up a Minecraft
         server on a Raspberry Pi and explored other use cases for the device. These experiences allowed me to broaden my
         skill set and gain hands-on exposure to different fields.
     </p>
@@ -123,8 +123,8 @@
 
     <p><b>Future</b> </p>
     <p>
-        After exploring many different fields, I’ve discovered that machine learning and full-stack engineering are
-        where I truly belong. These areas resonate with me because they offer the potential to solve a wide range of
+        After exploring many different fields, I’ve discovered that <b>machine learning</b> and <b>full-stack engineering</b>
+        are where I truly belong. These areas resonate with me because they offer the potential to solve a wide range of
         real-world problems. I’m particularly excited about the possibilities we can unlock by combining machine learning
         with robust engineering practices to create innovative and impactful solutions. I look forward to contributing
         to this ever-evolving field and seeing what we can achieve through the power of machine learning and code.
@@ -134,9 +134,28 @@
 <!-- --------------------------------------------------------------------------------------------------------------- -->
 
     <h3>TU Graz Data Team</h3>
-    <p>generell driwa schrieben dass cool war ma immer interessante sachen gehoert hat und halt durch copetitiv sachen immer
-    versucht hat cutting edge sachen zu machen. Driwa schreiben dass wia silber griagt haben bei kaggle und mit Thomas und Raffael
-    1. platz bei xeek, des bissl beschrieben und halt a sagen das Thomas is heavy lifting gmacht hat. </p>
+    <p>
+        I was part of the TU Graz Data Team for three terms.
+    </p>
+    <p>
+        In the summer of 2022, I collaborated with Hussain Hussain on the
+        <a href="https://www.dgl.ai/WSDM2022-Challenge/" target="_blank">WSDM2022-Challenge</a>. During this time, I gained valuable insights into graph-based methods from Hussain. However, I wasn’t able to contribute as much as I would have liked, as most of my time was dedicated to other subjects.
+    </p>
+    <p>
+        In the winter of 2024, I participated in two challenges. The first was the
+        <a href="https://thinkonward.com/app/c/challenges/two-birds" target="_blank">Xeek - Two Birds, One Neural Network</a>
+        challenge, where we achieved <b>first place</b>. I must note that Thomas Wedenig carried out the majority of the heavy
+        lifting in this project. The second was the
+        <a href="https://www.kaggle.com/competitions/optiver-trading-at-the-close" target="_blank">
+            Optiver - Trading at the Close
+        </a> Kaggle challenge, where our team secured a <b>silver medal (top 5%)</b> using LightGBM.
+    </p>
+    <p>
+        In the summer of 2024, I worked on the
+        <a href="https://www.kaggle.com/competitions/home-credit-credit-risk-model-stability" target="_blank">
+            Home Credit - Credit Risk Model Stability
+        </a> Kaggle challenge, where we ranked 1443 out of 3856 participants. This challenge was particularly difficult due to frequent changes in the evaluation criteria and the fact that the system was hackable, which ultimately led to a loss of motivation within the team.
+    </p>
     <hr>
 <!-- --------------------------------------------------------------------------------------------------------------- -->
 
