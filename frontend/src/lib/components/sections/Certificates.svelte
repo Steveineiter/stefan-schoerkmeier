@@ -7,8 +7,8 @@
     <h2>{title}</h2>
     <h3>Education</h3>
     <ul class="bullet-points">
-      <li>Master of Science, Software Engineering and Management (Major: Machine Learning, Minor: Business Law), Graz University of Technology, Graz, 2022-ongoing</li>
-      <li>Bachelor of Science, Software Engineering and Management, Graz University of Technology, Graz, 2018-2022</li>
+      <li>Master of Science in Software Engineering and Management (Major: Machine Learning, Minor: Business Law), Graz University of Technology, Graz, 2022–ongoing</li>
+      <li>Bachelor of Science in Software Engineering and Management, Graz University of Technology, Graz, 2018–2022</li>
     </ul>
     <hr>
 
