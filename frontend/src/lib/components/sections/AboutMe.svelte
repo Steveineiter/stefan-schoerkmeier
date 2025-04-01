@@ -5,7 +5,7 @@
 <div class="about-container">
   <div class="text-content">
     <h2>{title}</h2>
-    <p>I'm Stefan, a computer scientist crafting creative, efficient and innovative solutions. I stand for</p>
+    <p>I'm Stefan, a computer scientist crafting creative, efficient and innovative solutions. I stand for ... </p>
 
     <ul class="bullet-points">
       <li>focus on quality</li>
