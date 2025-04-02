@@ -6,22 +6,17 @@
     <div class="text-content">
         <h2>{title}</h2>
         <h3>CERN</h3>
-
-        <p><a href="/documents/employment-attestation.pdf" target="_blank">Employment Attention</a> </p>
         <p><a href="/documents/elias-sandner-letter-of-recommendation.pdf" target="_blank">Letter of Recommendation</a> </p>
-        <br>
         <p>The UI and main functionalities of Neutrino Review:</p>
         <div class="image-content">
             <img src="/images/llm-screening.png" alt="Neutrino Review Screening">
         </div>
-        <p>My database design which focuses on ensuring scalability and flexibility:</p>
-        <div class="image-content">
-            <img src="/images/database-design.png" alt="My Database Design">
-        </div>
     <p>
       As a Full Stack Developer at CERN, I worked with an international team and in collaboration with the WHO,
       contributing independently to key areas of the <a href="https://gitlab.cern.ch/caimira/neutrinoreview/-/tree/master?ref_type=heads">
-      CAiMIRA systematic review</a> project. Here are the main aspects of my work:
+      CAiMIRA systematic review</a> project which reduces the <b>workload in systematic reviews by about 68%</b> which
+      enables a 50% decrease in the time needed to complete the screening process
+        (<a href="https://ieeexplore.ieee.org/document/10852425">Source</a>). Here are the main aspects of my work:
     </p>
     <ol>
         <li><b>System and Database Design:</b> I improved the design of the system architecture and database using PostgreSQL,
@@ -34,6 +29,10 @@
         <li><b>Deployment:</b> I helped with deployment using GitLab Pages and CERN Paas (OpenShift), ensuring smooth,
             secure access to the application.</li>
     </ol>
+    <p>My database design which focuses on ensuring scalability and flexibility:</p>
+    <div class="image-content">
+        <img src="/images/database-design.png" alt="My Database Design">
+    </div>
     <p>This role allowed me to collaborate with an <b>international team</b> while working independently on key project
         components. Through this process I was able to hone following skills:</p>
       <ul>
@@ -75,8 +74,8 @@
         <li><b>Technical Practices:</b> Code linting, naming conventions</li>
     </ul>
     <p>
-        I would like to express my gratitude to <b>Dominik Hütter</b> and <b>David Prott</b> who teached me a lot about business and
-        sales as well as a huge thank you to my mentor, <b>Thomas Aglassinger</b>, who helped me become a much better developer.
+        I would like to express my gratitude to <b>Dominik Hütter</b> and <b>David Prott</b> who teached me a lot about
+        business and sales as well as a huge thank you to my mentor, who helped me become a much better developer.
     </p>
     <hr>
 <!-- --------------------------------------------------------------------------------------------------------------- -->

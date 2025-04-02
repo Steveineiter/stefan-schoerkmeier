@@ -5,7 +5,7 @@ export const posts = [
 		title: 'Code generation and problems I see for the future',
 		content:
 			'<p>According to CEOs of top AI companies a large amount of code will be written by AI. ' +
-			'Anthropic CEO Dario Amodei mentioned that 90% of code in 2025 and 100% of code in 2025. ' +
+			'Anthropic CEO Dario Amodei mentioned that 90% of code in 2025 and 100% of code in 2026. ' +
 			'</p>' +
 			'<p>This might be the case, that we are at least working in a pair-progrmaming manner aka ' +
 			'that the code is generated but there is a human in the loop. The <b>problem</b> I have seen from this ' +

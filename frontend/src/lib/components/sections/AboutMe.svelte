@@ -11,7 +11,7 @@
       <li>Focus on quality</li>
       <li>Great communication</li>
       <li>Cutting-edge technology</li>
-      <li>Planning & time management</li>
+      <li>Planning and time management</li>
     </ul>
 
     <p>I love to <b>implement modern solutions</b> and explore ways we can solve real-world problems with innovative approaches.</p>
