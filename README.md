@@ -2,6 +2,12 @@
 My personal web page which showcases my skills as a fullstack developer. 
 
 ---
+## Design Idea
+- Old design with navigation as it is now
+- NEW deisn idea: just a chat interface, left side text, right image or applicaiton.
+- Eg Hi im Stefan, what do you want to do? Eg more info about me, technological things etc.
+  - Input about you: text about me and right a image
+  - Input technological: text about generative ai right a canvas to draw and generate an image 
 
 ## Run it locally (Ubuntu)
 ### Backend 
